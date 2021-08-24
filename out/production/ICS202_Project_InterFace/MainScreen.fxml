@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_MainScreen">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane fx:id="RootPane" prefHeight="287.0" prefWidth="404.0">
+         <children>
+            <HBox layoutX="-1.0" layoutY="1.0" prefHeight="287.0" prefWidth="404.0">
+               <children>
+                  <VBox prefHeight="287.0" prefWidth="138.0" spacing="20.0">
+                     <children>
+                        <Text fx:id="insertText" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert:" textAlignment="CENTER" wrappingWidth="135.31640625">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="containsText" strokeType="OUTSIDE" strokeWidth="0.0" text="contains:" textAlignment="CENTER" wrappingWidth="137.205078125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="isPrefixText" strokeType="OUTSIDE" strokeWidth="0.0" text="isPrefix:" textAlignment="CENTER" wrappingWidth="136.205078125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="deleteText" strokeType="OUTSIDE" strokeWidth="0.0" text="delete:" textAlignment="CENTER" wrappingWidth="136.205078125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="allWordsPrefixText" strokeType="OUTSIDE" strokeWidth="0.0" text="allWordsPrefix:" textAlignment="CENTER" wrappingWidth="138.205078125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="sizeButton" mnemonicParsing="false" onAction="#sizeButtonAction" text="size" textAlignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="40.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children></VBox>
+                  <VBox prefHeight="283.0" prefWidth="265.0" spacing="23.0">
+                     <children>
+                        <TextField fx:id="insertTextField" onAction="#insert" />
+                        <TextField fx:id="containsTextField" onAction="#contains" />
+                        <TextField fx:id="isPrefixTextField" onAction="#isPrefix" />
+                        <TextField fx:id="deleteTextField" onAction="#delete" />
+                        <TextField fx:id="allWordsPrefixTextField" onAction="#allWordsPrefix" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Button fx:id="isEmptyButton" mnemonicParsing="false" onAction="#isEmptyButtonAction" text="isEmpty" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearButtonAction" text="clear">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin></Button>
+                           </children></HBox>
+                     </children></VBox>
+               </children>
+            </HBox>
+         </children></Pane>
+   </children>
+</GridPane>
